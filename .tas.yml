@@ -1,0 +1,15 @@
+---
+framework: jest
+preRun:
+     command:
+        - npm ci
+preMerge:
+  pattern:
+    - "./test/*/*.spec.js"
+postMerge:
+  pattern: 
+    - "./test/*/*.spec.js"
+postRun:
+     command:
+        - node --version
+version: 1.0
