@@ -6,13 +6,13 @@ preRun:
 preMerge:
   pattern:
     - "./test/unit/**/*.spec.js"
-    - "./test/unit/*.spec.js"
-    - "./test/integration/*.spec.js"
+#     - "./test/unit/*.spec.js"
+#     - "./test/integration/*.spec.js"
 postMerge:
   pattern: 
     - "./test/unit/**/*.spec.js"
-    - "./test/unit/*.spec.js"
-    - "./test/integration/*.spec.js"
+#     - "./test/unit/*.spec.js"
+#     - "./test/integration/*.spec.js"
 postRun:
      command:
         - node --version
